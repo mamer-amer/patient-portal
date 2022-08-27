@@ -1,16 +1,51 @@
 <body>
+  <header class="navbar navbar-header navbar-header-fixed">
+    <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+    <div class="navbar-brand">
+      <a href="../../index.html" class="df-logo">dash<span>forge</span></a>
+    </div><!-- navbar-brand -->
+    <div id="navbarMenu" class="navbar-menu-wrapper">
+      <div class="navbar-menu-header">
+        <a href="../../index.html" class="df-logo">dash<span>forge</span></a>
+        <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+      </div><!-- navbar-menu-header -->
+    </div><!-- navbar-menu-wrapper -->
+    <div class="navbar-search">
+      <div class="navbar-search-header">
+        <input type="search" class="form-control" placeholder="Type and hit enter to search...">
+        <button class="btn"><i data-feather="search"></i></button>
+        <a id="navbarSearchClose" href="" class="link-03 mg-l-5 mg-lg-l-10"><i data-feather="x"></i></a>
+      </div><!-- navbar-search-header -->
+      <div class="navbar-search-body">
+        <label class="tx-10 tx-medium tx-uppercase tx-spacing-1 tx-color-03 mg-b-10 d-flex align-items-center">Recent Searches</label>
+        <ul class="list-unstyled">
+          <li><a href="dashboard-one.html">modern dashboard</a></li>
+          <li><a href="app-calendar.html">calendar app</a></li>
+          <li><a href="../../collections/modal.html">modal examples</a></li>
+          <li><a href="../../components/el-avatar.html">avatar</a></li>
+        </ul>
 
-    <app-navbar></app-navbar>
+        <hr class="mg-y-30 bd-0">
+
+        <label class="tx-10 tx-medium tx-uppercase tx-spacing-1 tx-color-03 mg-b-10 d-flex align-items-center">Search Suggestions</label>
+
+        <ul class="list-unstyled">
+          <li><a href="dashboard-one.html">cryptocurrency</a></li>
+          <li><a href="app-calendar.html">button groups</a></li>
+          <li><a href="../../collections/modal.html">form elements</a></li>
+          <li><a href="../../components/el-avatar.html">contact app</a></li>
+        </ul>
+      </div><!-- navbar-search-body -->
+    </div><!-- navbar-search -->
+  </header><!-- navbar -->
+    
 
     <div class="content content-fixed content-auth">
       <div class="container">
         <div class="media align-items-stretch justify-content-center ht-100p pos-relative">
           <div class="media-body align-items-center d-none d-lg-flex">
             <div class="mx-wd-600">
-              <img src="https://via.placeholder.com/1260x950" class="img-fluid" alt="">
-            </div>
-            <div class="pos-absolute b-0 l-0 tx-12 tx-center">
-              Workspace design vector is created by <a href="https://www.freepik.com/pikisuperstar" target="_blank">pikisuperstar (freepik.com)</a>
+              <img src="../../assets/img/Doctor-Portal.jpg" class="img-fluid" alt="">
             </div>
           </div><!-- media-body -->
           <div class="sign-wrapper mg-lg-l-50 mg-xl-l-60">
@@ -29,7 +64,7 @@
                 </div>
                 <input type="password" class="form-control" placeholder="Enter your password">
               </div>
-              <button class="btn btn-brand-02 btn-block">Sign In</button>
+              <button (click)="Login()" class="btn btn-brand-02 btn-block">Sign In</button>
               <div class="divider-text">or</div>
               <button class="btn btn-outline-facebook btn-block">Sign In With Facebook</button>
               <button class="btn btn-outline-twitter btn-block">Sign In With Twitter</button>
@@ -42,15 +77,15 @@
 
     <footer class="footer">
       <div>
-        <span>&copy; 2019 DashForge v1.0.0. </span>
-        <span>Created by <a href="http://themepixels.me">ThemePixels</a></span>
+        <span>Copyright &copy; 2022 DashForge. All Rights Reserved.</span>
+        <!-- <span>All Rights Reserved.</span> -->
       </div>
       <div>
-        <nav class="nav">
+        <!-- <nav class="nav">
           <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
           <a href="../../change-log.html" class="nav-link">Change Log</a>
           <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link">Get Help</a>
-        </nav>
+        </nav> -->
       </div>
     </footer>
 
